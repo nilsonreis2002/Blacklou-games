@@ -1,4 +1,4 @@
-name: Build BlackLou Android APK
+name: Build BLACKLOUT PANTHER Android APK
 on:
   workflow_dispatch:
   push:
@@ -45,7 +45,7 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: BlackLou-Games-Android-APK
+          name: BLACKLOUT-PANTHER-Android-APK
           path: mobile/android/app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
           retention-days: 30
