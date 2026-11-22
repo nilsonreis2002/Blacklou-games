@@ -57,6 +57,64 @@ body.light-theme .catalog-tools input{background:#f5f8f1;color:#172114;border-co
 .cookie-notice{position:fixed;z-index:50;left:16px;right:16px;bottom:16px;width:min(760px,calc(100% - 32px));margin:auto;padding:18px 20px;border:1px solid #86b83e;border-radius:14px;background:#101810;color:#f4f8ef;box-shadow:0 14px 50px #000c;display:none;gap:14px;align-items:center;justify-content:space-between}
 .cookie-notice.visible{display:flex}.cookie-copy{font-size:.9rem;line-height:1.55}.cookie-copy strong{display:block;color:#baff55;font-size:1rem;margin-bottom:3px}.cookie-copy a{color:#c8ff7b;text-decoration:underline}.cookie-close{flex:0 0 auto;border:1px solid #aaff35;border-radius:999px;background:#aaff19;color:#101808;padding:10px 16px;font-weight:900;cursor:pointer}
 @media(max-width:600px){.cookie-notice.visible{align-items:stretch;flex-direction:column}.cookie-close{width:100%}}
+
+/* Android/mobile app tuning */
+@media (max-width: 760px) {
+  html { scroll-padding-top: 14px; }
+  body { padding-bottom: calc(76px + env(safe-area-inset-bottom)); }
+  .wrap { width: min(100% - 28px, 680px); }
+  .top { gap: 12px; padding: 14px 0; }
+  .top nav { gap: 16px; }
+  .top nav a, .utility-btn { min-height: 44px; display: inline-flex; align-items: center; }
+  .hero { padding: 34px 0 28px; gap: 20px; }
+  .hero h1 { font-size: clamp(2.35rem, 11vw, 3.35rem); }
+  .hero p { font-size: 1rem; line-height: 1.55; }
+  .mascot-panel { min-height: 270px; }
+  .mascot-panel:before { width: 205px; height: 205px; }
+  .panther-art { width: min(82%, 285px); }
+  .spotlight { margin-bottom: 30px; padding: 20px; gap: 12px; }
+  .spot-art { min-height: 130px; }
+  .catalog-tools { padding: 13px; }
+  .catalog-tools input { width: 100%; min-height: 48px; font-size: 16px; }
+  .filter { min-height: 42px; padding: 8px 13px; }
+  .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 11px; }
+  .game { min-height: 220px; padding: 15px; border-radius: 7px 16px 7px 16px; content-visibility: auto; contain-intrinsic-size: 230px; }
+  .game h3 { font-size: 1.05rem; line-height: 1.2; }
+  .game p { font-size: .88rem; line-height: 1.45; }
+  .play { min-height: 44px; display: flex; align-items: center; justify-content: center; font-size: .83rem; }
+  .game:hover { transform: none; }
+  .about { margin: 34px 0; padding: 20px; }
+  .footer { margin-top: 34px; }
+}
+@media (max-width: 390px) {
+  .grid { grid-template-columns: 1fr; }
+  .game { min-height: 190px; }
+  .site-controls { gap: 6px; }
+  .utility-btn { padding: 8px 10px; font-size: .76rem; }
+}
+.mobile-app-nav { display: none; }
+@media (max-width: 760px) {
+  .mobile-app-nav {
+    position: fixed; z-index: 60; left: 10px; right: 10px;
+    bottom: max(9px, env(safe-area-inset-bottom));
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px;
+    padding: 8px; border: 1px solid #668d36; border-radius: 18px;
+    background: rgba(8, 13, 9, .96); backdrop-filter: blur(14px);
+    box-shadow: 0 8px 30px #000b, 0 0 20px #9cff1920;
+  }
+  .mobile-app-nav a { min-height: 48px; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 1px; border-radius: 12px;
+    text-decoration: none; color: #dcebd1; font-size: .72rem; font-weight: 800; }
+  .mobile-app-nav a span { font-size: 1.12rem; line-height: 1.2; }
+  .mobile-app-nav a:active, .mobile-app-nav a[aria-current="page"] {
+    background: #aaff19; color: #101808;
+  }
+  .cookie-notice { bottom: calc(78px + env(safe-area-inset-bottom)); }
+}
+@media (prefers-reduced-motion: reduce), (max-width: 760px) {
+  .game, .cta, .play, .utility-btn { transition: none !important; }
+}
+
 </style>
 </head>
 <body>
@@ -98,4 +156,5 @@ Este site utiliza cookies e tecnologias semelhantes, inclusive de terceiros como
 (()=>{const box=document.getElementById('cookieNotice'),close=document.getElementById('closeCookieNotice'),reopen=document.getElementById('showCookieNotice');let dismissed=false;try{dismissed=localStorage.getItem('bl-cookie-notice-dismissed')==='1'}catch(e){}if(!dismissed)box.classList.add('visible');close.addEventListener('click',()=>{box.classList.remove('visible');try{localStorage.setItem('bl-cookie-notice-dismissed','1')}catch(e){}});reopen.addEventListener('click',()=>box.classList.add('visible'))})();
 </script><script id="bl-pwa-install">
 (()=>{if(!('serviceWorker' in navigator))return;navigator.serviceWorker.register('./sw.js').catch(()=>{});let promptEvent=null;const btn=document.getElementById('installApp');if(!btn)return;const isStandalone=window.matchMedia('(display-mode: standalone)').matches||window.navigator.standalone===true;if(isStandalone)return;window.addEventListener('beforeinstallprompt',event=>{event.preventDefault();promptEvent=event;btn.hidden=false});btn.addEventListener('click',async()=>{if(promptEvent){promptEvent.prompt();await promptEvent.userChoice;promptEvent=null;btn.hidden=true}else{alert('Para instalar: abra o menu do navegador e escolha “Instalar app” ou “Adicionar à tela inicial”.')}});window.addEventListener('appinstalled',()=>{btn.hidden=true;promptEvent=null})})();
-</script></body></html>
+</script><nav class="mobile-app-nav" aria-label="Navegação rápida"><a href="./" aria-current="page"><span>⌂</span>Início</a><a href="#jogos"><span>🎮</span>Jogos</a><a href="#sobre"><span>✦</span>Sobre</a></nav>
+</body></html>
