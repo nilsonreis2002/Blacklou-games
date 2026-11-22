@@ -1,8 +1,8 @@
 {
-  "name": "blacklou-games-android",
+  "name": "blacklout-panther-android",
   "version": "1.0.0",
   "private": true,
-  "description": "Android wrapper for BlackLou Games",
+  "description": "BLACKLOUT PANTHER Android game",
   "scripts": {
     "prepare:web": "node scripts/prepare-web.mjs",
     "cap:sync": "npm run prepare:web && cap sync android",
@@ -13,7 +13,5 @@
     "@capacitor/core": "^6.2.1",
     "three": "0.160.0"
   },
-  "devDependencies": {
-    "@capacitor/cli": "^6.2.1"
-  }
+  "devDependencies": {"@capacitor/cli":"^6.2.1"}
 }
