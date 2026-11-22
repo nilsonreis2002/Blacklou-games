@@ -1,160 +1,17 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#080b0a"><link rel="manifest" href="./manifest.webmanifest"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="BlackLou Games"><link rel="apple-touch-icon" href="assets/panther.svg"><link rel="icon" type="image/svg+xml" href="assets/panther.svg">
-<meta name="description" content="BlackLou Games: jogos online gratuitos de arcade, memória e reflexo. Jogue direto no navegador, no celular ou computador.">
-<meta name="robots" content="index,follow">
-<title>BlackLou Games — Jogos online grátis</title>
-<link rel="canonical" href="https://nilsonreis2002.github.io/Blacklou-games/">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9134247781656245" crossorigin="anonymous"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#050806">
+<meta name="description" content="BLACKLOUT PANTHER — aventura de ação 3D para Android e navegador.">
+<link rel="manifest" href="./manifest.webmanifest">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>BLACKLOUT PANTHER</title>
 <style>
-:root{color-scheme:dark;--lime:#b7ff35;--bg:#080b0a;--panel:#111813;--muted:#a2ada4;--line:#29352b}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% -15%,#263c20 0,transparent 48%),var(--bg);color:#f5f8f3;font:16px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}
-a{color:inherit}.wrap{width:min(1120px,92%);margin:auto}.top{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:22px 0;border-bottom:1px solid var(--line)}.logo{text-decoration:none;font-weight:950;letter-spacing:.1em;display:flex;align-items:center;gap:10px}.logo span{color:var(--lime)}.panther-mark{width:38px;height:38px;filter:drop-shadow(0 0 8px #6bff25)}nav{display:flex;gap:20px;flex-wrap:wrap}nav a{font-size:.92rem;color:var(--muted);text-decoration:none}nav a:hover{color:var(--lime)}
-.hero{padding:62px 0 54px;max-width:none;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:28px}.hero-copy{max-width:690px}.mascot-panel{min-height:310px;display:grid;place-items:center;position:relative;overflow:hidden;border:1px solid #31452b;border-radius:28px;background:radial-gradient(ellipse at 50% 55%,#25441b 0,transparent 58%),linear-gradient(145deg,#101a12,#070b08);box-shadow:inset 0 0 45px #152b12,0 18px 55px #0008}.mascot-panel:before{content:"";position:absolute;width:250px;height:250px;border:2px solid #8dff36;border-radius:50%;box-shadow:0 0 35px #58ff22,inset 0 0 35px #58ff2244}.panther-art{width:min(90%,340px);height:auto;position:relative;z-index:1;filter:drop-shadow(0 8px 20px #55ff3477)}.mascot-caption{position:absolute;bottom:16px;z-index:2;color:#b7ff35;font-size:.72rem;font-weight:900;letter-spacing:.28em;text-transform:uppercase}.eyebrow{color:var(--lime);font-size:.76rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase}.hero h1{font-size:clamp(2.8rem,8vw,5.7rem);line-height:.98;letter-spacing:-.055em;margin:18px 0}.hero h1 span{color:var(--lime)}.hero p{color:var(--muted);font-size:1.12rem;max-width:620px}.cta{display:inline-block;margin-top:18px;padding:13px 22px;border-radius:999px;background:var(--lime);color:#10150c;text-decoration:none;font-weight:900}
-.section-head{display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap;margin:26px 0 18px}.section-head h2{font-size:1.8rem;margin:0}.section-head p{color:var(--muted);margin:4px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:17px}#gameGrid .game[hidden]{display:none}.catalog-tools{margin:0 0 20px;padding:16px;border:1px solid #40552f;border-radius:12px;background:#0b100d}.search-label{display:block;color:var(--lime);font-size:.75rem;font-weight:900;letter-spacing:.15em;margin-bottom:7px}.catalog-tools input{width:100%;max-width:480px;padding:13px 15px;border-radius:9px;border:1px solid #526b3a;background:#050806;color:#fff;font:inherit;outline:none}.catalog-tools input:focus{border-color:var(--lime);box-shadow:0 0 0 3px #aaff1922}.filters{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.filter{border:1px solid #526b3a;background:#101810;color:#dce8d5;border-radius:999px;padding:8px 15px;font-weight:800}.filter.active{background:var(--lime);color:#10150c;border-color:var(--lime)}#gameCount{color:var(--muted);font-size:.85rem;margin:10px 0 0}.game{background:linear-gradient(145deg,#172019,#0e1310);border:1px solid var(--line);border-radius:20px;padding:23px;min-height:245px;display:flex;flex-direction:column;transition:transform .2s,border-color .2s}.game:hover{transform:translateY(-4px);border-color:#7fae36}.emoji{font-size:2.5rem}.game h3{margin:12px 0 3px;font-size:1.3rem}.game p{color:var(--muted);margin:0 0 18px;flex:1}.play{display:block;text-align:center;background:var(--lime);color:#10150c;text-decoration:none;font-weight:900;padding:11px 15px;border-radius:999px}.about{margin:58px 0;padding:26px;border:1px solid var(--line);border-radius:20px;background:#0d130f}.about h2{margin-top:0}.about p{color:var(--muted);max-width:850px}.footer{border-top:1px solid var(--line);margin-top:58px;padding:26px 0 38px;color:var(--muted);font-size:.9rem}.footlinks{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:12px}.footlinks a{color:var(--muted);text-decoration:none}.footlinks a:hover{color:var(--lime)}
-@media(max-width:760px){.hero{grid-template-columns:1fr;padding:48px 0 38px}.mascot-panel{min-height:245px}.panther-art{width:min(72%,260px)}}@media(max-width:600px){.top{align-items:flex-start;flex-direction:column}.hero h1{font-size:3.1rem}}
-
-/* BLACKLOU: identidade visual agressiva, metálica e neon */
-:root{--lime:#aaff19;--bg:#050706;--panel:#0b100d;--line:#40552f}
-body{background:radial-gradient(ellipse at 50% -10%,#31521d 0,transparent 42%),linear-gradient(180deg,#050706,#0b100d 52%,#050706)}
-.top{border-bottom:1px solid #6a982e;box-shadow:0 8px 30px #7aff1910}
-.logo{font-size:1.12rem;text-shadow:0 2px 0 #4a4a4a,0 4px 0 #222,0 7px 15px #000,0 0 16px #9cff2855;letter-spacing:.14em}
-.logo span{background:linear-gradient(180deg,#e6ffb8 0%,#aaff19 40%,#45a900 100%);background-clip:text;color:transparent;text-shadow:none;filter:drop-shadow(0 3px 0 #244b0c)}
-.panther-mark{width:44px;height:44px;filter:drop-shadow(0 0 9px #83ff21) drop-shadow(0 3px 0 #1e3910)}
-.hero{padding:54px 0 62px;gap:38px}
-.hero h1{text-transform:uppercase;font-weight:1000;letter-spacing:-.065em;text-shadow:0 4px 0 #27331e,0 8px 22px #000}
-.hero h1 span{background:linear-gradient(180deg,#eaffb5,#aaff19 50%,#45a900);background-clip:text;color:transparent;filter:drop-shadow(0 4px 0 #25430d) drop-shadow(0 0 18px #8cff3670)}
-.eyebrow{color:#c6ff58;text-shadow:0 0 14px #8dff3c}
-.mascot-panel{min-height:420px;border:2px solid #83c82b;border-radius:8px 34px 8px 34px;clip-path:polygon(5% 0,95% 0,100% 12%,96% 88%,90% 100%,10% 100%,0 87%,0 13%);background:radial-gradient(ellipse at 50% 46%,#416c1c 0,#152914 34%,#050806 74%);box-shadow:inset 0 0 55px #8dff2630,0 0 34px #6aff2530,0 22px 55px #000}
-.mascot-panel:before{width:300px;height:300px;border:3px solid #aaff19;box-shadow:0 0 25px #7cff32,0 0 65px #55ff2866,inset 0 0 35px #aaff1944}
-.mascot-panel:after{content:"";position:absolute;inset:12px;border:1px solid #b7ff3544;clip-path:polygon(5% 0,95% 0,100% 12%,96% 88%,90% 100%,10% 100%,0 87%,0 13%);pointer-events:none}
-.panther-art{width:min(96%,420px);filter:drop-shadow(0 12px 18px #000) drop-shadow(0 0 22px #72ff2a);transform:scale(1.08)}
-.hero-wordmark{position:absolute;z-index:3;bottom:39px;display:flex;flex-direction:column;align-items:center;line-height:.82;transform:skew(-8deg);filter:drop-shadow(0 5px 0 #111) drop-shadow(0 9px 12px #000)}
-.hero-wordmark strong{font-size:clamp(2.2rem,5vw,3.7rem);font-weight:1000;letter-spacing:-.06em;color:#e9edf0;-webkit-text-stroke:1px #4b555a;text-shadow:0 2px 0 #8e969a,0 4px 0 #555e62,0 6px 0 #24292b,0 9px 14px #000}
-.hero-wordmark b{font-size:clamp(2rem,4.5vw,3rem);font-weight:1000;font-style:italic;letter-spacing:.08em;color:#aaff19;text-shadow:0 2px 0 #65a80c,0 4px 0 #28600a,0 7px 12px #000}
-.mascot-caption{bottom:10px;font-size:.62rem;letter-spacing:.2em;text-shadow:0 0 12px #aaff19}
-.cta,.play{background:linear-gradient(180deg,#d6ff79,#aaff19 55%,#66bb10);box-shadow:0 4px 0 #356b0c,0 8px 22px #8cff3333;text-transform:uppercase;letter-spacing:.04em}
-.game{border-radius:8px 20px 8px 20px;border:1px solid #33492a;background:linear-gradient(145deg,#19251a,#090d0a);box-shadow:inset 0 1px #ffffff0d,0 12px 28px #0005;position:relative;overflow:hidden}
-.game:before{content:"";position:absolute;top:0;left:0;width:52px;height:3px;background:#aaff19;box-shadow:0 0 15px #aaff19}
-.game:hover{transform:translateY(-6px) scale(1.01);border-color:#aaff19;box-shadow:0 14px 32px #6aff2422}
-.about{border-radius:8px 24px 8px 24px;border-color:#536c32;background:linear-gradient(145deg,#141e14,#090d0a)}
-@media(max-width:760px){.mascot-panel{min-height:340px}.panther-art{width:min(90%,330px)}.hero-wordmark{bottom:35px}.mascot-caption{font-size:.52rem}}
-
-.tag3d{display:inline-block;vertical-align:middle;margin-left:5px;padding:3px 7px;border:1px solid #aaff35;border-radius:5px;color:#b7ff35;font-size:.62em;letter-spacing:.12em}.spotlight{position:relative;isolation:isolate;overflow:hidden;display:grid;grid-template-columns:1.15fr .85fr;gap:24px;align-items:center;margin:0 0 44px;padding:clamp(22px,4vw,42px);border:1px solid #496b34;border-radius:22px;background:radial-gradient(ellipse at 78% 45%,#29451c 0,transparent 42%),linear-gradient(120deg,#111b13,#080d09 72%);box-shadow:0 18px 60px #0008}.spot-copy h2{font-size:clamp(1.8rem,4vw,3rem);line-height:1.02;margin:10px 0}.spot-copy h2 span{color:var(--lime)}.spot-copy p{max-width:590px;color:var(--muted);line-height:1.7}.spot-points{display:flex;flex-wrap:wrap;gap:9px 16px;margin:17px 0 22px;color:#d9edc9;font-size:.85rem}.spot-art{min-height:220px;display:grid;place-items:center;position:relative}.orbit{position:absolute;width:min(28vw,250px);aspect-ratio:1;border:1px solid #aaff3655;border-radius:50%;box-shadow:0 0 55px #aaff3522,inset 0 0 45px #aaff3518}.spot-claw{position:relative;text-align:center;font-size:clamp(2.7rem,7vw,5.5rem);font-weight:1000;font-style:italic;line-height:.78;letter-spacing:-.08em;color:#e9f6df;text-shadow:0 5px 0 #25351d,0 0 28px #aaff3577;transform:skew(-8deg)}.spot-claw b{color:var(--lime)}.spot-label{position:absolute;bottom:8px;right:10%;font-size:.7rem;letter-spacing:.3em;color:var(--lime);font-weight:900}@media(max-width:680px){.spotlight{grid-template-columns:1fr}.spot-art{min-height:150px}.orbit{width:155px}.spot-points{font-size:.78rem}}
-
-/* Preferências de acessibilidade e tema */
-.site-controls{display:flex;gap:8px;flex-wrap:wrap}.utility-btn{border:1px solid #8bbd43;background:#101810;color:#efffe7;border-radius:999px;padding:9px 13px;font:700 .82rem system-ui;cursor:pointer}.utility-btn:focus-visible,a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #fff;outline-offset:3px}
-body.accessibility-mode{font-size:18px}body.accessibility-mode .game p,body.accessibility-mode .about p{font-size:1.08em;line-height:1.8}body.accessibility-mode a,body.accessibility-mode button,body.accessibility-mode input{min-height:44px}
-body.light-theme{--bg:#f2f5ed;--panel:#fff;--muted:#394638;--line:#aab99e;background:linear-gradient(180deg,#f4f8ed,#e8efdf);color:#172114}
-body.light-theme .top,body.light-theme .catalog-tools,body.light-theme .game,body.light-theme .about{background:#fff;color:#172114;border-color:#a9bd98;box-shadow:0 8px 24px #263b1912}
-body.light-theme .catalog-tools input{background:#f5f8f1;color:#172114;border-color:#80976e}body.light-theme .filter{background:#e8efdf;color:#20301b;border-color:#8da47a}body.light-theme .filter.active{background:#aaff19;color:#15200c}body.light-theme .utility-btn{background:#e8efdf;color:#172114;border-color:#80976e}body.light-theme nav a,body.light-theme .game p,body.light-theme .about p,body.light-theme .footer,body.light-theme .footlinks a{color:#394638}
-@media(max-width:760px){.site-controls{width:100%}.utility-btn{flex:1}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
-
-/* Aviso de cookies e publicidade */
-.cookie-notice{position:fixed;z-index:50;left:16px;right:16px;bottom:16px;width:min(760px,calc(100% - 32px));margin:auto;padding:18px 20px;border:1px solid #86b83e;border-radius:14px;background:#101810;color:#f4f8ef;box-shadow:0 14px 50px #000c;display:none;gap:14px;align-items:center;justify-content:space-between}
-.cookie-notice.visible{display:flex}.cookie-copy{font-size:.9rem;line-height:1.55}.cookie-copy strong{display:block;color:#baff55;font-size:1rem;margin-bottom:3px}.cookie-copy a{color:#c8ff7b;text-decoration:underline}.cookie-close{flex:0 0 auto;border:1px solid #aaff35;border-radius:999px;background:#aaff19;color:#101808;padding:10px 16px;font-weight:900;cursor:pointer}
-@media(max-width:600px){.cookie-notice.visible{align-items:stretch;flex-direction:column}.cookie-close{width:100%}}
-
-/* Android/mobile app tuning */
-@media (max-width: 760px) {
-  html { scroll-padding-top: 14px; }
-  body { padding-bottom: calc(76px + env(safe-area-inset-bottom)); }
-  .wrap { width: min(100% - 28px, 680px); }
-  .top { gap: 12px; padding: 14px 0; }
-  .top nav { gap: 16px; }
-  .top nav a, .utility-btn { min-height: 44px; display: inline-flex; align-items: center; }
-  .hero { padding: 34px 0 28px; gap: 20px; }
-  .hero h1 { font-size: clamp(2.35rem, 11vw, 3.35rem); }
-  .hero p { font-size: 1rem; line-height: 1.55; }
-  .mascot-panel { min-height: 270px; }
-  .mascot-panel:before { width: 205px; height: 205px; }
-  .panther-art { width: min(82%, 285px); }
-  .spotlight { margin-bottom: 30px; padding: 20px; gap: 12px; }
-  .spot-art { min-height: 130px; }
-  .catalog-tools { padding: 13px; }
-  .catalog-tools input { width: 100%; min-height: 48px; font-size: 16px; }
-  .filter { min-height: 42px; padding: 8px 13px; }
-  .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 11px; }
-  .game { min-height: 220px; padding: 15px; border-radius: 7px 16px 7px 16px; content-visibility: auto; contain-intrinsic-size: 230px; }
-  .game h3 { font-size: 1.05rem; line-height: 1.2; }
-  .game p { font-size: .88rem; line-height: 1.45; }
-  .play { min-height: 44px; display: flex; align-items: center; justify-content: center; font-size: .83rem; }
-  .game:hover { transform: none; }
-  .about { margin: 34px 0; padding: 20px; }
-  .footer { margin-top: 34px; }
-}
-@media (max-width: 390px) {
-  .grid { grid-template-columns: 1fr; }
-  .game { min-height: 190px; }
-  .site-controls { gap: 6px; }
-  .utility-btn { padding: 8px 10px; font-size: .76rem; }
-}
-.mobile-app-nav { display: none; }
-@media (max-width: 760px) {
-  .mobile-app-nav {
-    position: fixed; z-index: 60; left: 10px; right: 10px;
-    bottom: max(9px, env(safe-area-inset-bottom));
-    display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px;
-    padding: 8px; border: 1px solid #668d36; border-radius: 18px;
-    background: rgba(8, 13, 9, .96); backdrop-filter: blur(14px);
-    box-shadow: 0 8px 30px #000b, 0 0 20px #9cff1920;
-  }
-  .mobile-app-nav a { min-height: 48px; display: flex; flex-direction: column;
-    align-items: center; justify-content: center; gap: 1px; border-radius: 12px;
-    text-decoration: none; color: #dcebd1; font-size: .72rem; font-weight: 800; }
-  .mobile-app-nav a span { font-size: 1.12rem; line-height: 1.2; }
-  .mobile-app-nav a:active, .mobile-app-nav a[aria-current="page"] {
-    background: #aaff19; color: #101808;
-  }
-  .cookie-notice { bottom: calc(78px + env(safe-area-inset-bottom)); }
-}
-@media (prefers-reduced-motion: reduce), (max-width: 760px) {
-  .game, .cta, .play, .utility-btn { transition: none !important; }
-}
-
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#050806;color:#efffe7;font-family:system-ui,Arial}body{min-height:100svh;display:grid;place-items:center;padding:24px;background:radial-gradient(ellipse at 50% 42%,#203b19 0,transparent 48%),#050806}.launch{width:min(540px,100%);text-align:center;padding:30px 22px;border:1px solid #6c9f36;border-radius:24px;background:linear-gradient(145deg,#142018ed,#070b08f5);box-shadow:0 20px 70px #0009}.mark{font-size:76px;filter:drop-shadow(0 0 20px #9cff36)}h1{font-size:clamp(34px,9vw,58px);line-height:.95;letter-spacing:.04em;margin:12px 0;color:#dcffad;text-shadow:0 0 24px #8dff3740}p{color:#c6d7bd;line-height:1.6}.start{display:inline-block;margin-top:14px;padding:16px 28px;border-radius:12px;background:linear-gradient(#e4ffac,#9de52b);color:#101808;text-decoration:none;font-weight:1000;letter-spacing:.08em}.note{font-size:12px;color:#91a18b;margin-top:20px}
 </style>
+<script>if('serviceWorker'in navigator){addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));}</script>
 </head>
-<body>
-<div class="wrap">
-<header class="top"><a class="logo" href="./"><svg class="panther-mark" viewBox="0 0 64 64" aria-hidden="true"><path fill="#101610" stroke="#b7ff35" stroke-width="2.5" d="M8 19 5 5l17 9Q32 8 42 14L59 5l-4 18q7 18-5 29Q40 61 31 59 13 59 7 43 3 31 8 19Z"/><path fill="#b7ff35" d="m16 29 12 4-5 5-9-2zm32 0-12 4 5 5 9-2z"/><path fill="#f4f7f1" d="m20 31 6 2-3 2zm24 0-6 2 3 2z"/><path fill="none" stroke="#b7ff35" stroke-width="2.5" stroke-linecap="round" d="M24 45q8 7 16 0M31 39l1 3 1-3"/></svg>BLACKLOU <span>GAMES</span></a><nav aria-label="Navegação principal"><a href="#jogos">Jogos</a><a href="#sobre">Sobre</a><a href="contato.html">Contato</a></nav><div class="site-controls" aria-label="Preferências de visualização"><button type="button" class="utility-btn" id="accessToggle" aria-pressed="false" title="Ativar texto maior e foco reforçado">♿ Acessibilidade</button><button type="button" class="utility-btn" id="installApp" hidden>⬇ Instalar app</button><button type="button" class="utility-btn" id="themeToggle" aria-label="Alternar tema claro e escuro">☀️ Tema claro</button></div></header>
-<main>
-<section class="hero"><div class="hero-copy"><div class="eyebrow">A arena oficial da pantera</div><h1>Entre no jogo.<br><span>Desperte seu instinto.</span></h1><p>Desafios de habilidade, memória e reflexo em uma arena de jogos gratuita. A pantera BlackLou está de olho no seu próximo recorde.</p><a class="cta" href="#jogos">EXPLORAR JOGOS ↓</a></div><div class="mascot-panel" aria-label="Mascote pantera BlackLou"><svg class="panther-art" viewBox="0 0 360 300" role="img" aria-label="Rosto estilizado de uma pantera negra com olhos verdes"><defs><linearGradient id="fur" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#354238"/><stop offset=".48" stop-color="#080b09"/><stop offset="1" stop-color="#1d2a20"/></linearGradient><linearGradient id="eye" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#e4ff9c"/><stop offset=".45" stop-color="#b7ff35"/><stop offset="1" stop-color="#28b900"/></linearGradient></defs><path d="M55 92 31 18l88 40Q180 25 241 58l88-40-24 76 5 91q-14 92-130 102Q64 276 50 185Z" fill="url(#fur)" stroke="#6bff25" stroke-width="5"/><path d="m57 74 35 18-28-46zm246 0-35 18 28-46z" fill="#101612" stroke="#a4ff38" stroke-width="3"/><path d="M75 123q38-48 96-14l-12 39q-42 20-84-25zm210 0q-38-48-96-14l12 39q42 20 84-25z" fill="#050706" stroke="#344a35" stroke-width="3"/><path d="M87 132q35-28 72-6-31 31-72 6zm186 0q-35-28-72-6 31 31 72 6z" fill="url(#eye)" stroke="#b7ff35" stroke-width="3"/><ellipse cx="127" cy="130" rx="5" ry="13" fill="#020402"/><ellipse cx="233" cy="130" rx="5" ry="13" fill="#020402"/><path d="M126 177q54-37 108 0l-17 49q-37 28-74 0z" fill="#050706" stroke="#64745e" stroke-width="3"/><path d="m160 181 20-10 20 10-20 17z" fill="#202b23" stroke="#b7ff35" stroke-width="2"/><path d="M180 198v17m-25 1q25 18 50 0" fill="none" stroke="#d9e8d2" stroke-width="4" stroke-linecap="round"/><path d="m145 218 10 22m60-22-10 22" stroke="#e9f5e4" stroke-width="5" stroke-linecap="round"/><path d="M91 183 35 171m57 29-65 7m207-24 56-12m-57 29 65 7" stroke="#9fb29a" stroke-width="2" stroke-linecap="round"/><path d="M67 90q113-86 226 0" fill="none" stroke="#b7ff35" stroke-opacity=".5" stroke-width="3"/></svg><div class="hero-wordmark"><strong>BLACKLOU</strong><b>GAMES</b></div><div class="mascot-caption">INSTINTO DE CAMPEÃO • DESDE A ARENA</div></div></section>
-<section class="spotlight"><div class="spot-copy"><div class="eyebrow">EXPERIÊNCIA 3D • BLACKLOU ORIGINAL</div><h2>Entre nas <span>Crônicas da Pantera</span></h2><p>Explore arenas em 3D, enfrente criaturas colossais, evolua habilidades e desbloqueie equipamentos na aventura principal da BlackLou.</p><div class="spot-points"><span>✦ Campanha e chefes</span><span>✦ XP e aprimoramentos</span><span>✦ Controles touch</span></div><a class="cta" href="games/blacklou-legend/index.html">JOGAR A AVENTURA 3D ↗</a></div><div class="spot-art" aria-hidden="true"><div class="orbit"></div><div class="spot-claw">BLACK<br><b>LOU</b></div><div class="spot-label">3D ACTION</div></div></section><section id="jogos"><div class="section-head"><div><div class="eyebrow">Biblioteca</div><h2>Escolha seu jogo</h2><p>Novos desafios serão adicionados ao catálogo.</p></div></div>
-<div class="catalog-tools"><label class="search-label" for="gameSearch">BUSCAR JOGO</label><input id="gameSearch" type="search" placeholder="Digite o nome de um jogo..." autocomplete="off"><div class="filters" role="group" aria-label="Filtrar jogos"><button class="filter active" data-filter="todos">Todos</button><button class="filter" data-filter="acao">Ação</button><button class="filter" data-filter="arcade">Arcade</button><button class="filter" data-filter="casual">Casual</button></div><p id="gameCount" aria-live="polite">9 jogos disponíveis</p></div>
-<div class="grid" id="gameGrid">
-<article class="game" data-category="acao"><div class="emoji">🌀</div><h3>Void Hunter</h3><p>Sobreviva às hordas dimensionais, derrote guardiões e enfrente ondas cada vez mais perigosas.</p><a class="play" href="games/void-hunter/index.html">JOGAR AGORA</a></article>
-<article class="game" data-category="arcade casual"><div class="emoji">🐆</div><h3>Panther Rush</h3><p>Corra pela arena neon, salte obstáculos, use impulso e colete cristais.</p><a class="play" href="games/panther-rush/index.html">JOGAR AGORA</a></article>
-<article class="game" data-category="arcade casual"><div class="emoji">🐍</div><h3>Neon Snake</h3><p>Guie a cobra, colete energia e tente superar seu recorde.</p><a class="play" href="games/neon-snake/index.html">JOGAR AGORA</a></article>
-<article class="game" data-category="casual"><div class="emoji">🧠</div><h3>Memory Matrix</h3><p>Encontre os oito pares usando o menor número de jogadas.</p><a class="play" href="games/memory-matrix/index.html">JOGAR AGORA</a></article>
-<article class="game" data-category="arcade"><div class="emoji">⚡</div><h3>Click Rush</h3><p>Teste seus reflexos e acerte o maior número de alvos em 20 segundos.</p><a class="play" href="games/click-rush/index.html">JOGAR AGORA</a></article>
-<article class="game" data-category="arcade"><div class="emoji">🧱</div><h3>Pixel Breaker</h3><p>Controle a plataforma, rebata a bola e destrua todos os blocos.</p><a class="play" href="games/pixel-breaker/index.html">JOGAR AGORA</a></article>
-<article class="game" data-category="acao"><div class="emoji">🐆</div><h3>BlackLou: A Lenda da Pantera <span class="tag3d">3D</span></h3><p>Uma aventura de plataforma com poderes especiais, monstros, cristais e um chefão final.</p><a class="play" href="games/blacklou-legend/index.html">JOGAR A AVENTURA</a></article>
-<article class="game" data-category="acao"><div class="emoji">🚀</div><h3>Neon Siege</h3><p>Enfrente ondas de inimigos neste jogo de tiro arcade.</p><a class="play" href="games/neon-siege/index.html">JOGAR AGORA</a></article>
-<article class="game" data-category="arcade"><div class="emoji">🏎️</div><h3>Cyber Drift</h3><p>Desvie do trânsito neon e sobreviva em velocidade crescente.</p><a class="play" href="games/cyber-drift/index.html">JOGAR AGORA</a></article>
-</div></section>
-<section class="about" id="sobre"><div class="eyebrow">Sobre o projeto</div><h2>Bem-vindo à BlackLou Games</h2><p>A BlackLou Games é um portal independente de jogos casuais para navegador. Nosso objetivo é oferecer experiências simples, acessíveis e divertidas em computadores e celulares. Os jogos são gratuitos e não exigem cadastro.</p><p>Estamos trabalhando continuamente para ampliar a biblioteca, melhorar a experiência de jogo e publicar conteúdo útil para nossa comunidade.</p></section>
-</main>
-<footer class="footer"><div class="footlinks"><a href="sobre.html">Sobre</a><a href="privacidade.html">Privacidade</a><a href="termos.html">Termos de uso</a><a href="contato.html">Contato</a><a href="games/">Todos os jogos</a></div><div>© <span id="year"></span> BlackLou Games. Todos os direitos reservados.</div><button type="button" id="showCookieNotice" class="cookie-reopen" style="margin-top:12px;background:none;border:0;color:inherit;text-decoration:underline;cursor:pointer">Aviso de cookies</button></footer>
-</div><script>document.getElementById('year').textContent=new Date().getFullYear();
-const themeToggle=document.getElementById('themeToggle'),accessToggle=document.getElementById('accessToggle');
-function setTheme(theme){document.body.classList.toggle('light-theme',theme==='light');themeToggle.textContent=theme==='light'?'🌙 Tema escuro':'☀️ Tema claro';themeToggle.setAttribute('aria-label',theme==='light'?'Ativar tema escuro':'Ativar tema claro');try{localStorage.setItem('bl-theme',theme)}catch(e){}}
-try{setTheme(localStorage.getItem('bl-theme')||'dark')}catch(e){setTheme('dark')}
-themeToggle.addEventListener('click',()=>setTheme(document.body.classList.contains('light-theme')?'dark':'light'));
-accessToggle.addEventListener('click',()=>{const on=document.body.classList.toggle('accessibility-mode');accessToggle.setAttribute('aria-pressed',String(on));accessToggle.textContent=on?'♿ Acessibilidade: ligada':'♿ Acessibilidade'});
-const gameSearch=document.getElementById('gameSearch'),gameCards=[...document.querySelectorAll('#gameGrid .game')],filterButtons=[...document.querySelectorAll('.filter')],gameCount=document.getElementById('gameCount');let activeFilter='todos';function filterGames(){const term=gameSearch.value.trim().toLocaleLowerCase('pt-BR');let visible=0;gameCards.forEach(card=>{const matchText=card.innerText.toLocaleLowerCase('pt-BR').includes(term),matchCategory=activeFilter==='todos'||card.dataset.category.split(' ').includes(activeFilter),show=matchText&&matchCategory;card.hidden=!show;if(show)visible++});gameCount.textContent=visible+' '+(visible===1?'jogo encontrado':'jogos encontrados')}gameSearch.addEventListener('input',filterGames);filterButtons.forEach(button=>button.addEventListener('click',()=>{activeFilter=button.dataset.filter;filterButtons.forEach(b=>b.classList.toggle('active',b===button));filterGames()}));filterGames();</script>
-<script>
-(()=>{let installEvent=null;const installButton=document.getElementById('installApp');window.addEventListener('beforeinstallprompt',event=>{event.preventDefault();installEvent=event;installButton.hidden=false});installButton.addEventListener('click',async()=>{if(!installEvent)return;installEvent.prompt();await installEvent.userChoice;installEvent=null;installButton.hidden=true});window.addEventListener('appinstalled',()=>{installButton.hidden=true;installEvent=null});if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}))}})();
-</script>
-<aside class="cookie-notice" id="cookieNotice" role="region" aria-label="Aviso sobre cookies" aria-live="polite">
-<div class="cookie-copy"><strong>Cookies e publicidade</strong>
-Este site utiliza cookies e tecnologias semelhantes, inclusive de terceiros como o Google AdSense, para fornecer e medir anúncios. Dependendo das suas configurações e da sua região, os anúncios podem ser personalizados. Consulte nossa <a href="privacidade.html">Política de Privacidade</a> e os <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">controles de anúncios do Google</a>.
-</div><button type="button" class="cookie-close" id="closeCookieNotice">Fechar aviso</button></aside>
-<script>
-(()=>{const box=document.getElementById('cookieNotice'),close=document.getElementById('closeCookieNotice'),reopen=document.getElementById('showCookieNotice');let dismissed=false;try{dismissed=localStorage.getItem('bl-cookie-notice-dismissed')==='1'}catch(e){}if(!dismissed)box.classList.add('visible');close.addEventListener('click',()=>{box.classList.remove('visible');try{localStorage.setItem('bl-cookie-notice-dismissed','1')}catch(e){}});reopen.addEventListener('click',()=>box.classList.add('visible'))})();
-</script><script id="bl-pwa-install">
-(()=>{if(!('serviceWorker' in navigator))return;navigator.serviceWorker.register('./sw.js').catch(()=>{});let promptEvent=null;const btn=document.getElementById('installApp');if(!btn)return;const isStandalone=window.matchMedia('(display-mode: standalone)').matches||window.navigator.standalone===true;if(isStandalone)return;window.addEventListener('beforeinstallprompt',event=>{event.preventDefault();promptEvent=event;btn.hidden=false});btn.addEventListener('click',async()=>{if(promptEvent){promptEvent.prompt();await promptEvent.userChoice;promptEvent=null;btn.hidden=true}else{alert('Para instalar: abra o menu do navegador e escolha “Instalar app” ou “Adicionar à tela inicial”.')}});window.addEventListener('appinstalled',()=>{btn.hidden=true;promptEvent=null})})();
-</script><nav class="mobile-app-nav" aria-label="Navegação rápida"><a href="./" aria-current="page"><span>⌂</span>Início</a><a href="#jogos"><span>🎮</span>Jogos</a><a href="#sobre"><span>✦</span>Sobre</a></nav>
-</body></html>
+<body><main class="launch"><div class="mark">🐆</div><h1>BLACKLOUT<br>PANTHER</h1><p>Uma aventura de ação em 3D. Entre na arena, domine as garras e enfrente os guardiões de Noctara.</p><a class="start" href="./games/blacklou-legend/index.html">JOGAR AGORA</a><div class="note">Jogo otimizado para controles por toque e telas Android.</div></main><script>location.replace('./games/blacklou-legend/index.html');</script></body></html>
