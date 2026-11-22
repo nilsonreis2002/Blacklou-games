@@ -1,10 +1,10 @@
-# BlackLou Games para Android
+# BLACKLOUT PANTHER — Android
 
-O app usa Capacitor e reaproveita o site e os jogos existentes. O conteúdo web é copiado para `mobile/www` antes da sincronização; não edite essa pasta manualmente.
+Aplicativo Android dedicado ao jogo de ação 3D BLACKLOUT PANTHER. O app abre diretamente a aventura; a experiência de portal e catálogo de jogos foi retirada da tela inicial.
 
 ## Gerar APK de teste
 
-Requisitos: Node.js 20+, JDK 17 e Android SDK configurado.
+Requisitos: Node.js 20+, JDK 17 e Android SDK.
 
 ```bash
 cd mobile
@@ -16,23 +16,14 @@ cd android
 ./gradlew assembleDebug
 ```
 
-APK de teste: `mobile/android/app/build/outputs/apk/debug/app-debug.apk`.
+APK debug: `mobile/android/app/build/outputs/apk/debug/app-debug.apk`.
 
-## Atualizar o conteúdo do app
+## Build no GitHub
 
-Sempre que o site mudar:
+Abra Actions → Build BLACKLOUT PANTHER Android APK → Run workflow. O artefato gerado chama-se `BLACKLOUT-PANTHER-Android-APK`.
 
-```bash
-cd mobile
-npm run cap:sync
-```
+A versão debug é para testes e instalação manual. Para distribuição pública, gere uma versão release assinada com uma keystore protegida em GitHub Secrets; nunca envie a keystore ou senhas ao repositório.
 
-## Gerar APK automaticamente
+## Desempenho
 
-No GitHub, abra **Actions → Build BlackLou Android APK → Run workflow**. O workflow compila o APK debug e publica o arquivo como artefato para baixar.
-
-O APK debug é adequado para testes e instalação manual. Para distribuição pública como versão release, configure uma chave de assinatura Android em secrets e gere uma versão release assinada. Não coloque keystore nem senhas no repositório.
-
-## PWA
-
-O site também pode ser instalado pelo navegador Android quando servido por HTTPS. O service worker mantém uma cópia básica da interface para uso offline; jogos e recursos externos ainda podem exigir conexão na primeira visita.
+O jogo usa Three.js empacotado localmente no APK e qualidade gráfica adaptativa para dispositivos móveis. O desempenho real ainda precisa ser validado no aparelho Android de destino.
