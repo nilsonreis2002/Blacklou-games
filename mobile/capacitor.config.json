@@ -1,0 +1,11 @@
+{
+  "appId": "com.blacklou.games",
+  "appName": "BlackLou Games",
+  "webDir": "www",
+  "bundledWebRuntime": false,
+  "android": {
+    "allowMixedContent": false,
+    "captureInput": false,
+    "webContentsDebuggingEnabled": false
+  }
+}
