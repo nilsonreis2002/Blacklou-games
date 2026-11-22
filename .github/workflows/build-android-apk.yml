@@ -37,6 +37,7 @@ jobs:
         working-directory: mobile
         run: |
           npm run prepare:web
+          node scripts/check-game.mjs
           npx cap add android
           npx cap sync android
           test -s www/assets/vendor/three.module.js
