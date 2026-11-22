@@ -1,10 +1,9 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
-
 const manifestPath = resolve('android/app/src/main/AndroidManifest.xml');
 let xml = readFileSync(manifestPath, 'utf8');
-const activity = xml.match(/<activity\b[^>]*MainActivity[^>]*>/s);
-if (!activity) throw new Error('Activity MainActivity não encontrada no AndroidManifest.xml');
+const activity = xml.match(/<activity\b[^>]*>/s);
+if (!activity) throw new Error('Nenhuma activity encontrada no AndroidManifest.xml');
 let tag = activity[0];
 if (/android:screenOrientation=/.test(tag)) {
   tag = tag.replace(/android:screenOrientation="[^"]*"/, 'android:screenOrientation="landscape"');
