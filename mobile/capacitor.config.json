@@ -1,6 +1,6 @@
 {
-  "appId": "com.blacklou.games",
-  "appName": "BlackLou Games",
+  "appId": "com.blackloutpanther.game",
+  "appName": "BLACKLOUT PANTHER",
   "webDir": "www",
   "bundledWebRuntime": false,
   "android": {
