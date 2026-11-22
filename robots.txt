@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nilsonreis2002.github.io/Blacklou-games/sitemap.xml
