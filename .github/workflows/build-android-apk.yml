@@ -39,6 +39,9 @@ jobs:
           npm run prepare:web
           npx cap add android
           npx cap sync android
+          test -s www/assets/vendor/three.module.js
+          test -s www/games/blacklou-legend/index.html
+          node scripts/configure-android.mjs
       - name: Build debug APK
         working-directory: mobile/android
         run: ./gradlew assembleDebug
