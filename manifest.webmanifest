@@ -1,25 +1,15 @@
 {
-  "id": "./",
-  "name": "BlackLou Games",
-  "short_name": "BlackLou",
-  "description": "Sua arena de jogos: ação, arcade e aventuras da pantera BlackLou.",
+  "id": "./games/blacklou-legend/index.html",
+  "name": "BLACKLOUT PANTHER",
+  "short_name": "Blacklout",
+  "description": "Aventura de ação 3D da pantera guardiã de Noctara.",
   "lang": "pt-BR",
-  "start_url": "./",
+  "start_url": "./games/blacklou-legend/index.html",
   "scope": "./",
   "display": "standalone",
-  "orientation": "any",
+  "orientation": "landscape",
   "background_color": "#050706",
   "theme_color": "#aaff19",
-  "categories": [
-    "games",
-    "entertainment"
-  ],
-  "icons": [
-    {
-      "src": "assets/blacklou-app-icon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any maskable"
-    }
-  ]
+  "categories": ["games", "entertainment"],
+  "icons": [{"src":"assets/blacklou-app-icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
 }
