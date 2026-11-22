@@ -112,7 +112,7 @@ function showMainMenu(){
  $('modal').querySelectorAll('[data-dungeon]').forEach(b=>b.onclick=()=>{state.chapter=Number(b.dataset.dungeon);state.arena=0;$('modal').querySelectorAll('.dungeon').forEach(x=>x.classList.toggle('active',x===b));});
  $('enterDungeon').onclick=()=>{startMusic();state.arena=0;state.hp=state.maxHp;buildArena();showChapterCard()};
  $('resumeRun').onclick=()=>{startMusic();buildArena();showChapterCard()};
- $('openGuide').onclick=()=>$('how').click();
+ $('openGuide').onclick=()=>{$('modal').innerHTML='<div class="eyebrow">GUIA DE COMBATE</div><h1>DOMINE A PANTERA</h1><p><b>Mover:</b> use as setas na tela ou A/D.<br><b>Pular:</b> botão de salto ou Espaço.<br><b>Atacar:</b> botão de ataque ou J.<br><b>Poder:</b> botão de poder ou K.<br><b>Esquiva:</b> botão de esquiva ou Shift.<br><b>Escudo:</b> botão de escudo ou L.<br>Derrote criaturas para ganhar XP, ouro e gemas. Use as recompensas para evoluir seu guardião.</p><button class="btn" id="guideBack">VOLTAR ÀS MASMORRAS</button>';$('guideBack').onclick=showMainMenu;};
  $('overlay').classList.remove('hide');updateHud();
 }
 $('begin').onclick=showMainMenu;
