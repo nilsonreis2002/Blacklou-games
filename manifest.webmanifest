@@ -1,0 +1,25 @@
+{
+  "id": "./",
+  "name": "BlackLou Games",
+  "short_name": "BlackLou",
+  "description": "Sua arena de jogos: ação, arcade e aventuras da pantera BlackLou.",
+  "lang": "pt-BR",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#050706",
+  "theme_color": "#aaff19",
+  "categories": [
+    "games",
+    "entertainment"
+  ],
+  "icons": [
+    {
+      "src": "assets/panther.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
