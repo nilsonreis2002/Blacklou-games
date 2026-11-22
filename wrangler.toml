@@ -1,0 +1,6 @@
+name = "blacklou-games"
+compatibility_date = "2026-11-22"
+
+[assets]
+directory = "."
+not_found_handling = "404-page"
