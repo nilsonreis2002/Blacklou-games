@@ -1,4 +1,4 @@
-import { cpSync, mkdirSync, readdirSync, rmSync } from 'node:fs';
+import { cpSync, copyFileSync, mkdirSync, readdirSync, rmSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -19,4 +19,7 @@ for (const entry of readdirSync(repoRoot, { withFileTypes: true })) {
   });
 }
 
-console.log('Site copiado para mobile/www sem incluir arquivos de desenvolvimento.');
+const vendorDir = resolve(output, 'assets', 'vendor');
+mkdirSync(vendorDir, { recursive: true });
+copyFileSync(resolve(mobileRoot, 'node_modules', 'three', 'build', 'three.module.js'), resolve(vendorDir, 'three.module.js'));
+console.log('Site e Three.js copiados para mobile/www sem incluir arquivos de desenvolvimento.');
